@@ -19,6 +19,7 @@ The forensic disk image analysis process is divided into several key layers:
 7. **Reporting and Documentation Layer**: Consolidating findings into structured reports.
 8. **Report Dissemination Layer**: Sharing analysis results with stakeholders.
 
+
 ## Code Examples
 
 ### Image Acquisition
@@ -32,3 +33,4 @@ with open("image_copy.dd", "wb") as out_file:
     for offset in range(0, image.info.size, 1024 * 1024):
         data = image.read(offset, 1024 * 1024)
         out_file.write(data)
+'
